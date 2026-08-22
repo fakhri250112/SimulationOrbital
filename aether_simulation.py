@@ -14,7 +14,7 @@ except Exception as e:
     root = tk.Tk()
     root.withdraw()
     messagebox.showerror(
-        "AETHER - Missing dependency",
+        "ORBITAL - Missing dependency",
         "Program membutuhkan numpy dan matplotlib.\n\n"
         "Jalankan:\n"
         "pip install -r requirements.txt\n\n"
@@ -23,10 +23,10 @@ except Exception as e:
     raise
 
 
-class AetherSimulation:
+class ORBITALSimulation:
     def __init__(self, root):
         self.root = root
-        self.root.title("AETHER 3D Satellite Energy Simulation")
+        self.root.title("ORBITAL 3D Satellite Energy Simulation")
         self.root.geometry("1280x820")
         self.root.minsize(1000, 700)
 
@@ -56,7 +56,7 @@ class AetherSimulation:
         top = ttk.Frame(self.root, padding=(10, 8))
         top.pack(fill="x")
 
-        title = ttk.Label(top, text="AETHER — 3D Satellite Energy Simulation",
+        title = ttk.Label(top, text="ORBITAL — 3D Satellite Energy Simulation",
                           font=("Segoe UI", 16, "bold"))
         title.pack(side="left")
 
@@ -380,5 +380,5 @@ class AetherSimulation:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = AetherSimulation(root)
+    app = ORBITALSimulation(root)
     root.mainloop()

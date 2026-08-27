@@ -1,5 +1,5 @@
 @echo off
-title AETHER 3D Satellite Energy Simulation
+title ORBITAL 3D Satellite Energy Simulation
 cd /d "%~dp0"
 
 where py >nul 2>nul
@@ -15,8 +15,9 @@ if not %errorlevel%==0 (
     %PY% -m pip install -r requirements.txt
 )
 
-echo Starting AETHER...
-%PY% aether_simulation.py
+echo Starting ORBITAL...
+%PY% orbital_simulation.py
+
 if not %errorlevel%==0 (
     echo.
     echo Program ended with an error.

@@ -782,7 +782,7 @@ class OrbitalSimulation:
 
             if (
                 self.beaming
-                and self.battery <= 82.0
+                and self.battery <= 10.0
             ):
                 self.beaming = False
 
